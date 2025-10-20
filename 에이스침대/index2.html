@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        body {
+            background: #eee;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        .swiper-button-next {
+            width: 50px;
+            height: 150px;
+            right: 0
+        }
+
+        .swiper-button-prev {
+            width: 50px;
+            height: 150px;
+            left: 0
+        }
+
+        .swiper-button-next::after {
+            content: '';
+        }
+
+        .swiper-button-next::before {
+            content: '';
+        }
+
+        .swiper-button-prev::after {
+            content: '';
+
+        }
+
+        .swiper-button-prev::before {
+            content: '';
+        }
+
+        svg {
+            fill: none;
+            stroke: #ccc;
+            position: absolute;
+            border: 1px solid #000;
+            cursor: pointer;
+
+            width: 50px;
+            height: 150px;
+
+        }
+
+        path {
+            position: absolute;
+            stroke: #c9c9c9;
+            stroke-width: 4;
+            fill: transparent;
+            transition: 0.6s;
+            stroke-linecap: round;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg>
+                    <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+                </svg>
+
+            </div>
+            <div class="swiper-button-next">
+                <svg>
+                    <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+                </svg>
+
+            </div>
+
+        </div>
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg>
+                    <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+                </svg>
+
+            </div>
+            <div class="swiper-button-next">
+                <svg>
+                    <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+                </svg>
+
+            </div>
+
+        </div>
+        <div class="swiper mySwiper3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-prev">
+                <svg>
+                    <path class="btn_prev" d="M 40 10 Q 40 65 40 140"></path>
+                </svg>
+
+            </div>
+            <div class="swiper-button-next">
+                <svg>
+                    <path class="btn_next" d="M 10 10 Q 10 65 10 140"></path>
+                </svg>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        const prevButtons = document.querySelectorAll('.swiper-button-prev');
+        const nextButtons = document.querySelectorAll('.swiper-button-next');
+
+        prevButtons.forEach((prev) => {
+            prev.addEventListener('mouseover', function () {
+                this.querySelector('path').setAttribute('d', 'M 40 10 Q 10 65 40 140');
+            });
+
+            prev.addEventListener('mouseout', function () {
+                this.querySelector('path').setAttribute('d', 'M 40 10 Q 40 65 40 140');
+            });
+        });
+
+        nextButtons.forEach((next) => {
+            next.addEventListener('mouseover', function () {
+                this.querySelector('path').setAttribute('d', 'M 10 10 Q 40 65 10 140');
+            });
+
+            next.addEventListener('mouseout', function () {
+                this.querySelector('path').setAttribute('d', 'M 10 10 Q 10 65 10 140');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
