@@ -38,7 +38,7 @@ window.addEventListener('wheel', function (e) {
 })
 
 
-
+//nav
 $('li.main-mn').mouseenter(function () {
     $(this).find('ul.sub-mn').stop().slideDown()
 })
@@ -67,7 +67,7 @@ $('.close-map-btn').click(function () {
 // });
 
 
-
+//sec1
 gsap.set('.bg > div', { opacity: 0 });
 gsap.registerEffect({
     name: 'textEffect',
@@ -167,7 +167,6 @@ var swiper1 = new Swiper(".tab1-swiper", {
         },
     },
 });
-
 var swiper2 = new Swiper(".tab2-swiper", {
     loop: true,
     breakpoints: {

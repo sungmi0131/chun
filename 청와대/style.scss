@@ -457,10 +457,11 @@ header {
 }
 
 
-@media screen and (max-width:600px){
-     nav {
+@media screen and (max-width:600px) {
+    nav {
         display: none;
     }
+
     .sitemap-box {
         z-index: 999;
         position: absolute;
@@ -623,6 +624,7 @@ header {
             }
         }
     }
+
     .sec2 {
         .main-title {
             h2 {
@@ -749,6 +751,7 @@ header {
             }
         }
     }
+
     .sec3 {
         display: flex;
         flex-direction: column;
@@ -760,12 +763,13 @@ header {
             width: 100%;
             text-align: center;
             color: #fff;
-            margin-top: 90px;
+            margin-top: 80px;
             font-family: NotoSerifKR-Medium;
 
             h2 {
                 font-size: 35px;
                 font-weight: 500;
+                padding: 20px;
             }
 
             p {
@@ -775,7 +779,7 @@ header {
             }
 
             ul {
-                margin-top: 60px;
+                margin-top: 50px;
                 text-align: left;
 
                 li {
@@ -892,6 +896,7 @@ header {
             }
         }
     }
+
     .sec4 {
         .text {
             h2 {
@@ -962,7 +967,8 @@ header {
             }
         }
     }
-   .sec5 {
+
+    .sec5 {
         background: url(./image/section04.jpg) no-repeat center center/cover;
         position: relative;
 
@@ -1013,7 +1019,7 @@ header {
                         padding: 15px;
 
                         &.on {
-                            background-color:#149FB8;
+                            background-color: #149FB8;
                             color: #fff;
                         }
                     }
@@ -1134,7 +1140,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -1204,7 +1210,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -1274,7 +1280,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -1345,7 +1351,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -1359,9 +1365,50 @@ header {
             }
         }
     }
+
+    footer {
+        width: 100%;
+        height: 273px;
+        background-color: #2a2d34;
+        color: #ffffff80;
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        gap: 30px;
+        align-items: center;
+        padding: 50px 30px;
+
+        h2 {
+            display: block;
+            width: 350px;
+            height: 32px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .ft-box {
+            text-align: center;
+
+            p {
+                margin-bottom: 15px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .ft-content {
+                gap: 15px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 30px;
+                transition: 0.35s;
+            }
+        }
+    }
 }
 
-@media (min-width:601px) and (max-width:1023px) {
+@media (min-width:601px) and (max-width:1400px) {
     nav {
         display: none;
     }
@@ -1679,26 +1726,27 @@ header {
             width: 100%;
             text-align: center;
             color: #fff;
-            margin-top: 90px;
+            margin-top: 80px;
             font-family: NotoSerifKR-Medium;
 
             h2 {
                 font-size: 35px;
                 font-weight: 500;
+                padding: 10px;
             }
 
             p {
                 font-size: 18px;
-                line-height: 26px;
+                line-height: 30px;
                 letter-spacing: -1px;
             }
 
             ul {
-                margin-top: 60px;
+                margin-top: 20px;
                 text-align: left;
 
                 li {
-                    width: calc(100% - 40px);
+                    width: 50%;
                     margin: auto;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.4862745098);
 
@@ -1721,7 +1769,7 @@ header {
 
                     .img2 {
                         max-width: 29px;
-                        filter: invert(10);
+                        filter: invert(40);
                     }
                 }
             }
@@ -1883,7 +1931,7 @@ header {
         }
     }
 
-  .sec5 {
+    .sec5 {
         background: url(./image/section04.jpg) no-repeat center center/cover;
         position: relative;
 
@@ -1904,7 +1952,6 @@ header {
         .tab-box {
             align-items: center;
             position: relative;
-            max-width: 1000px;
             min-height: 5vh;
             margin: 15px;
             display: flex;
@@ -1934,7 +1981,7 @@ header {
                         padding: 15px;
 
                         &.on {
-                            background-color:#149FB8;
+                            background-color: #149FB8;
                             color: #fff;
                         }
                     }
@@ -1964,7 +2011,7 @@ header {
                     height: 390px;
 
                     .swiper {
-                        width: 85%;
+                        width: 80%;
                         height: 100%;
 
                         .swiper-slide {
@@ -2055,7 +2102,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -2094,8 +2141,7 @@ header {
                                     width: 100%;
                                     height: 200px;
                                     object-fit: cover;
-                                    border-radius: 10px 10px 0 0;
-                                  transition: 0.5s;
+                                    transition: 0.5s;
                                 }
 
                                 p {
@@ -2114,18 +2160,19 @@ header {
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     white-space: nowrap;
-               
+
                                 }
+
                                 &:hover {
 
-                                img {
-                                    transform: scale(1.3);
-                                }
+                                    img {
+                                        transform: scale(1.3);
+                                    }
 
-                                p {
-                                    opacity: 1;
+                                    p {
+                                        opacity: 1;
+                                    }
                                 }
-                            }
                             }
                         }
                     }
@@ -2137,7 +2184,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -2176,7 +2223,7 @@ header {
                                     width: 100%;
                                     height: 200px;
                                     object-fit: cover;
-
+                                    transition: 0.5s;
                                 }
 
                                 p {
@@ -2191,10 +2238,20 @@ header {
                                     font-size: 17px;
                                     font-weight: 400;
                                     transition: 0.35s;
-                                    opacity: 1;
+                                    opacity: 0;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     white-space: nowrap;
+                                }
+
+                                &:hover {
+                                    img {
+                                        transform: scale(1.3);
+                                    }
+
+                                    p {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }
@@ -2207,7 +2264,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -2222,9 +2279,8 @@ header {
                 #tab4 {
                     height: 390px;
 
-
                     .swiper {
-                        width: 85%;
+                        width: 9%;
                         height: 100%;
 
                         .swiper-slide {
@@ -2247,7 +2303,6 @@ header {
                                     width: 100%;
                                     height: 400px;
                                     object-fit: cover;
-
                                 }
 
                                 p {
@@ -2278,7 +2333,7 @@ header {
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%);
-                        z-index: 99;
+                        z-index: 9;
 
                         .swiper-button-next {
                             transform: translateX(100%);
@@ -2335,7 +2390,7 @@ header {
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1401px) {
     nav {
         >ul {
             width: 100%;
@@ -2349,6 +2404,7 @@ header {
                 a {
                     width: 100%;
                     display: inline-block;
+                    white-space: nowrap;
                 }
 
                 ul.sub-mn {
@@ -2747,7 +2803,7 @@ header {
 
         .tab-box {
             position: relative;
-            width: calc(100% - 8%);
+            width: calc(100% - 10%);
             max-width: 1500px;
             min-height: 70vh;
             margin: auto;
@@ -2774,7 +2830,7 @@ header {
                         padding: 15px;
 
                         &.on {
-                            background-color:#149FB8;
+                            background-color: #149FB8;
                             color: #fff;
                         }
                     }
